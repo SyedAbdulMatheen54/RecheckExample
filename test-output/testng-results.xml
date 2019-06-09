@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="16638" started-at="2019-06-02T09:24:13Z" finished-at="2019-06-02T09:24:29Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="16638" started-at="2019-06-02T09:24:13Z" finished-at="2019-06-02T09:24:29Z">
+      <class name="com.mycompany.RecheckTestClass">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.mycompany.RecheckTestClass@19c0f4a]" name="setUp" is-config="true" duration-ms="5756" started-at="2019-06-02T14:54:13Z" finished-at="2019-06-02T14:54:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="google()[pri:0, instance:com.mycompany.RecheckTestClass@19c0f4a]" name="google" duration-ms="9498" started-at="2019-06-02T14:54:18Z" finished-at="2019-06-02T14:54:28Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[
+A detailed report will be created at 'target\test-classes\retest\recheck\com.mycompany.RecheckTestClass.report'. You can review the details by using our GUI from https://retest.de/review/.
+
+The following differences have been found in 'com.mycompany.RecheckTestClass'(with 1 check(s)):
+Test 'google' has 3 differences in 1 states:
+open resulted in:
+	DIV at 'HTML[1]/BODY[1]/DIV[1]/DIV[3]/FORM[1]/DIV[2]':
+		jsdata: expected="MuIEvd;;BoNTWk", actual="MuIEvd;;BFwHtk"
+	INPUT at 'HTML[1]/BODY[1]/DIV[1]/DIV[3]/FORM[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/INPUT[1]':
+		data-ved: expected="0ahUKEwjOsv27l8riAhUBgI8KHVy6AdoQ39UDCAQ", actual="0ahUKEwjlmqGBvcriAhVCO48KHarkAJUQ39UDCAQ"
+	DIV at 'HTML[1]/BODY[1]/DIV[1]/DIV[7]':
+		jsdata: expected="hE2vdf;;BoNTWs", actual="hE2vdf;;BFwHts"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 
+A detailed report will be created at 'target\test-classes\retest\recheck\com.mycompany.RecheckTestClass.report'. You can review the details by using our GUI from https://retest.de/review/.
+
+The following differences have been found in 'com.mycompany.RecheckTestClass'(with 1 check(s)):
+Test 'google' has 3 differences in 1 states:
+open resulted in:
+	DIV at 'HTML[1]/BODY[1]/DIV[1]/DIV[3]/FORM[1]/DIV[2]':
+		jsdata: expected="MuIEvd;;BoNTWk", actual="MuIEvd;;BFwHtk"
+	INPUT at 'HTML[1]/BODY[1]/DIV[1]/DIV[3]/FORM[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/INPUT[1]':
+		data-ved: expected="0ahUKEwjOsv27l8riAhUBgI8KHVy6AdoQ39UDCAQ", actual="0ahUKEwjlmqGBvcriAhVCO48KHarkAJUQ39UDCAQ"
+	DIV at 'HTML[1]/BODY[1]/DIV[1]/DIV[7]':
+		jsdata: expected="hE2vdf;;BoNTWs", actual="hE2vdf;;BFwHts"
+	at de.retest.recheck.RecheckImpl.capTest(RecheckImpl.java:141)
+	at com.mycompany.RecheckTestClass.google(RecheckTestClass.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- google -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.mycompany.RecheckTestClass@19c0f4a]" name="tearDown" is-config="true" duration-ms="1357" started-at="2019-06-02T14:54:28Z" finished-at="2019-06-02T14:54:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.mycompany.RecheckTestClass -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

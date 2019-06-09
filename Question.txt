@@ -1,0 +1,1 @@
+When i come to know that element path has been changed, then how will recheck update retest.xml file page page says retest.xml will be created on first execution?
